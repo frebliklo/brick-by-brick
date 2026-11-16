@@ -3240,22 +3240,6 @@
         }
       }
     },
-    "Your password is never saved, only a sign-in token" : {
-      "localizations" : {
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Din adgangskode gemmes aldrig, kun et login-token"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your password is never saved, only a sign-in token"
-          }
-        }
-      }
-    },
     "Signing in…" : {
       "localizations" : {
         "da" : {
@@ -3700,6 +3684,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sign in to bring in your sets"
+          }
+        }
+      }
+    },
+    "Your password is never saved on this device" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din adgangskode gemmes aldrig på enheden"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your password is never saved on this device"
           }
         }
       }

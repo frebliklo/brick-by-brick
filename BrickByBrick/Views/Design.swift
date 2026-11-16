@@ -100,10 +100,17 @@ struct Eyebrow: View {
 }
 
 struct PrimaryButton: ButtonStyle {
-    func makeBody(configuration: Configuration) -> some View {
-        configuration.label.font(.headline).frame(maxWidth: .infinity).padding(.vertical, 17)
-            .foregroundStyle(.white).background(Palette.orange, in: RoundedRectangle(cornerRadius: 17))
-            .opacity(configuration.isPressed ? 0.8 : 1)
+    func makeBody(configuration: Configuration) -> some View { PrimaryButtonBody(configuration: configuration) }
+
+    private struct PrimaryButtonBody: View {
+        let configuration: Configuration
+        @Environment(\.isEnabled) private var isEnabled
+        var body: some View {
+            configuration.label.font(.headline).frame(maxWidth: .infinity).padding(.vertical, 17)
+                .foregroundStyle(isEnabled ? Color.white : Palette.muted)
+                .background(isEnabled ? Palette.orange : Palette.line, in: RoundedRectangle(cornerRadius: 17))
+                .opacity(configuration.isPressed ? 0.8 : 1)
+        }
     }
 }
 
@@ -160,11 +167,24 @@ struct CatalogImage: View {
     }
 }
 
+/// What sits at the trailing edge of a set card.
+enum SetRowTrailing: Equatable {
+    case chevron, saved, none, loading
+    case selectable(Bool)
+}
+
 struct SetRow: View {
     let set: LEGOSet
     var saved = false
     /// Off where the row isn't a navigation link.
     var showsChevron = true
+    /// Overrides `saved`/`showsChevron` when set, e.g. for a selection circle.
+    var trailing: SetRowTrailing?
+
+    private var resolvedTrailing: SetRowTrailing {
+        trailing ?? (saved ? .saved : showsChevron ? .chevron : .none)
+    }
+
     var body: some View {
         HStack(spacing: 15) {
             CatalogImage(url: set.setImgUrl).frame(width: 84, height: 80)
@@ -176,11 +196,26 @@ struct SetRow: View {
                 Text("\(set.numParts) pieces · \(String(set.year))").font(.caption).foregroundStyle(Palette.muted)
             }
             Spacer(minLength: 0)
-            if saved || showsChevron {
-                Image(systemName: saved ? "checkmark.circle.fill" : "chevron.right")
-                    .foregroundStyle(saved ? Palette.green : Palette.muted).font(.subheadline)
-            }
+            trailingView
         }.padding(14).background(Palette.surface, in: RoundedRectangle(cornerRadius: 20))
+    }
+
+    @ViewBuilder private var trailingView: some View {
+        switch resolvedTrailing {
+        case .chevron:
+            Image(systemName: "chevron.right").foregroundStyle(Palette.muted).font(.subheadline)
+        case .saved:
+            Image(systemName: "checkmark.circle.fill").foregroundStyle(Palette.green).font(.subheadline)
+        case .none:
+            EmptyView()
+        case .loading:
+            ProgressView().frame(width: 28, height: 28)
+        case .selectable(let isOn):
+            Image(systemName: isOn ? "checkmark.circle.fill" : "circle")
+                .font(.system(size: 26, weight: .medium))
+                .foregroundStyle(isOn ? Palette.orange : Palette.muted.opacity(0.45))
+                .contentTransition(.symbolEffect(.replace))
+        }
     }
 }
 

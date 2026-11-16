@@ -91,15 +91,19 @@ final class BrickByBrickUITests: XCTestCase {
     }
 
     @MainActor private func openPracticeChecklist(_ app: XCUIApplication) {
+        // Saved cards live in a lazy grid, so they only exist once scrolled near; at large
+        // text sizes they can start well below the screen. Scroll until either entry appears.
         let latest = app.descendants(matching: .any)["saved-set-sample-1"]
-        if latest.waitForExistence(timeout: 2) {
-            XCTAssertFalse(app.buttons["sampleSet"].exists)
-            for _ in 0..<5 where !latest.isHittable { app.swipeUp() }
+        let sample = app.buttons["sampleSet"]
+        XCTAssertTrue(app.buttons["appSettings"].waitForExistence(timeout: 5))
+        for _ in 0..<10 where !(latest.exists && latest.isHittable) && !(sample.exists && sample.isHittable) {
+            app.swipeUp()
+        }
+        if latest.exists && latest.isHittable {
+            XCTAssertFalse(sample.exists)
             latest.tap()
         } else {
-            let sample = app.buttons["sampleSet"]
-            for _ in 0..<5 where !sample.isHittable { app.swipeUp() }
-            XCTAssertTrue(sample.isHittable)
+            XCTAssertTrue(sample.isHittable, "Neither the saved practice set nor the practice entry was reachable")
             sample.tap()
             let start = app.buttons["startChecklist"]
             for _ in 0..<5 where !start.isHittable { app.swipeUp() }

@@ -201,7 +201,6 @@ struct CatalogConnectionView: View {
             }
             .buttonStyle(PrimaryButton())
             .disabled(validating || key.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
-            .opacity(key.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ? 0.5 : 1)
         }
     }
 
@@ -262,7 +261,7 @@ struct RebrickableAccountView: View {
             ConnectionCard {
                 benefit("square.stack.3d.up", "See every set in your Rebrickable collection")
                 benefit("checklist", "Pick the ones to build again")
-                benefit("lock", "Your password is never saved, only a sign-in token")
+                benefit("lock", "Your password is never saved on this device")
             }
             ConnectionCard {
                 SoftTextField(prompt: "Username or email", text: $username, identifier: "rebrickableUsername")
@@ -276,7 +275,6 @@ struct RebrickableAccountView: View {
                 }
                 .buttonStyle(PrimaryButton())
                 .disabled(!canSignIn || signingIn)
-                .opacity(canSignIn ? 1 : 0.5)
             }
             Text("Signed up with Google or Facebook? Set a password on Rebrickable first.")
                 .font(.caption).foregroundStyle(Palette.muted).multilineTextAlignment(.center)
@@ -301,8 +299,10 @@ struct RebrickableAccountView: View {
     }
 
     private func benefit(_ icon: String, _ text: LocalizedStringKey) -> some View {
-        Label { Text(text).foregroundStyle(Palette.ink) } icon: {
+        HStack(alignment: .firstTextBaseline, spacing: 12) {
             Image(systemName: icon).foregroundStyle(Palette.green)
+                .frame(width: 24, alignment: .center)
+            Text(text).foregroundStyle(Palette.ink).fixedSize(horizontal: false, vertical: true)
         }.font(.subheadline)
     }
 }

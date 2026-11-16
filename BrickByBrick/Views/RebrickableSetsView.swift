@@ -123,19 +123,9 @@ struct RebrickableSetsView: View {
             if isSelected { selected.remove(entry.id) } else { selected.insert(entry.id) }
         } label: {
             VStack(alignment: .leading, spacing: 6) {
-                HStack(spacing: 12) {
-                    SetRow(set: entry.set, showsChevron: false)
-                        .overlay(RoundedRectangle(cornerRadius: 20)
-                            .strokeBorder(isSelected ? Palette.orange : .clear, lineWidth: 2.5))
-                    Group {
-                        if isCurrent { ProgressView() }
-                        else {
-                            Image(systemName: isSelected ? "checkmark.circle.fill" : "circle")
-                                .font(.system(size: 28, weight: .medium))
-                                .foregroundStyle(isSelected ? Palette.orange : Palette.line)
-                        }
-                    }.frame(width: 32)
-                }
+                SetRow(set: entry.set, trailing: isCurrent ? .loading : .selectable(isSelected))
+                    .overlay(RoundedRectangle(cornerRadius: 20)
+                        .strokeBorder(isSelected ? Palette.orange : .clear, lineWidth: 2.5))
                 if entry.quantity > 1 {
                     Text("You own \(entry.quantity) copies; one checklist is kept per set.")
                         .font(.caption).foregroundStyle(Palette.muted).padding(.leading, 4)
@@ -178,7 +168,6 @@ struct RebrickableSetsView: View {
                 }
                 .buttonStyle(PrimaryButton())
                 .disabled(selected.isEmpty)
-                .opacity(selected.isEmpty ? 0.5 : 1)
                 .accessibilityIdentifier("addSelectedSets")
             }
         }

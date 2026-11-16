@@ -51,6 +51,12 @@ final class AppStore {
         apiKey = isUITesting ? "" : (Keychain.read() ?? "")
         userToken = isUITesting ? "" : (Keychain.read(.userToken) ?? "")
         rebrickableUsername = userToken.isEmpty ? "" : (UserDefaults.standard.string(forKey: Self.usernameKey) ?? "")
+        #if DEBUG
+        // Preview signed-out states without touching the Keychain: -preview-signed-out, -preview-no-catalog.
+        let arguments = ProcessInfo.processInfo.arguments
+        if arguments.contains("-preview-signed-out") || arguments.contains("-preview-no-catalog") { userToken = ""; rebrickableUsername = "" }
+        if arguments.contains("-preview-no-catalog") { apiKey = "" }
+        #endif
         // The practice set is only for trying the app before adding a real set.
         if builds.contains(where: { !$0.set.isSample }), builds.contains(where: { $0.set.isSample }) {
             _ = commit(builds.filter { !$0.set.isSample })
