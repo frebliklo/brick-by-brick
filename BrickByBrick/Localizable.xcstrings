@@ -2711,6 +2711,326 @@
           }
         }
       }
+    },
+    "Rebrickable didn’t accept that username or password." : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rebrickable godkendte ikke brugernavnet eller adgangskoden."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rebrickable didn’t accept that username or password."
+          }
+        }
+      }
+    },
+    "Your Rebrickable sign-in has expired. Sign in again in Settings." : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dit Rebrickable-login er udløbet. Log ind igen under Indstillinger."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your Rebrickable sign-in has expired. Sign in again in Settings."
+          }
+        }
+      }
+    },
+    "Your Rebrickable details couldn’t be saved securely. Please try again." : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dine Rebrickable-oplysninger kunne ikke gemmes sikkert. Prøv igen."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your Rebrickable details couldn’t be saved securely. Please try again."
+          }
+        }
+      }
+    },
+    "Signed in as %@" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Logget ind som %@"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Signed in as %@"
+          }
+        }
+      }
+    },
+    "Import my Rebrickable sets" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hent mine Rebrickable-sæt"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Import my Rebrickable sets"
+          }
+        }
+      }
+    },
+    "Sign out of Rebrickable" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Log ud af Rebrickable"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sign out of Rebrickable"
+          }
+        }
+      }
+    },
+    "Username or email" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brugernavn eller e-mail"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Username or email"
+          }
+        }
+      }
+    },
+    "Password" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adgangskode"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password"
+          }
+        }
+      }
+    },
+    "Sign in" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Log ind"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sign in"
+          }
+        }
+      }
+    },
+    "Your Rebrickable sets" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dine Rebrickable-sæt"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your Rebrickable sets"
+          }
+        }
+      }
+    },
+    "Optional. Your password is sent once to Rebrickable to get a sign-in token; only the token is kept, in this device’s Keychain. Signed up with Google or Facebook? Set a password on Rebrickable first." : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valgfrit. Din adgangskode sendes én gang til Rebrickable for at få et login-token; kun tokenet gemmes, i enhedens nøglering. Oprettede du dig med Google eller Facebook? Vælg først en adgangskode på Rebrickable."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Optional. Your password is sent once to Rebrickable to get a sign-in token; only the token is kept, in this device’s Keychain. Signed up with Google or Facebook? Set a password on Rebrickable first."
+          }
+        }
+      }
+    },
+    "Loading your Rebrickable sets…" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Henter dine Rebrickable-sæt…"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Loading your Rebrickable sets…"
+          }
+        }
+      }
+    },
+    "No sets on Rebrickable yet" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen sæt på Rebrickable endnu"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No sets on Rebrickable yet"
+          }
+        }
+      }
+    },
+    "Sets you add to your collection on Rebrickable will show up here." : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sæt, du føjer til din samling på Rebrickable, vises her."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sets you add to your collection on Rebrickable will show up here."
+          }
+        }
+      }
+    },
+    "%lld sets on Rebrickable · %lld not yet in Brick by Brick" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld sæt på Rebrickable · %lld endnu ikke i Brick by Brick"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld sets on Rebrickable · %lld not yet in Brick by Brick"
+          }
+        }
+      }
+    },
+    "Gathering %@… (%lld left)" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Samler %@… (%lld tilbage)"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gathering %@… (%lld left)"
+          }
+        }
+      }
+    },
+    "Add all new sets" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilføj alle nye sæt"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add all new sets"
+          }
+        }
+      }
+    },
+    "Rebrickable sets" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rebrickable-sæt"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rebrickable sets"
+          }
+        }
+      }
+    },
+    "Add %@" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilføj %@"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add %@"
+          }
+        }
+      }
+    },
+    "You own %lld copies; one checklist is kept per set." : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du ejer %lld eksemplarer; der gemmes én tjekliste pr. sæt."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You own %lld copies; one checklist is kept per set."
+          }
+        }
+      }
     }
   },
   "version" : "1.1"

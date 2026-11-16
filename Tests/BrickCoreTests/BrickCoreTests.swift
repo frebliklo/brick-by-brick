@@ -115,6 +115,49 @@ struct BrickCoreTests {
         await #expect(throws: CatalogError.self) { try await client.inventory(for: SampleCatalog.set) }
     }
 
+    @Test func signInPostsFormEncodedCredentialsAndReturnsToken() async throws {
+        let client = CatalogClient(apiKey: "test-key", transport: { request in
+            #expect(request.httpMethod == "POST")
+            #expect(request.url?.absoluteString == "https://rebrickable.com/api/v3/users/_token/")
+            #expect(request.value(forHTTPHeaderField: "Authorization") == "key test-key")
+            #expect(request.value(forHTTPHeaderField: "Content-Type") == "application/x-www-form-urlencoded")
+            let body = String(decoding: request.httpBody ?? Data(), as: UTF8.self)
+            #expect(body == "username=brick%40example.com&password=a%2Bb%26c")
+            #expect(request.url?.query == nil)
+            return Self.response(request, body: #"{"user_token":"abc123"}"#)
+        })
+        let token = try await client.signIn(username: " brick@example.com ", password: "a+b&c")
+        #expect(token == "abc123")
+    }
+
+    @Test(arguments: [400, 401])
+    func rejectedSignInIsALoginError(status: Int) async {
+        let client = CatalogClient(apiKey: "test", transport: { request in Self.response(request, body: "{}", status: status) })
+        await #expect(throws: CatalogError.invalidLogin) { try await client.signIn(username: "a", password: "b") }
+    }
+
+    @Test func ownedSetsFollowPagesAndMergeDuplicateLists() async throws {
+        let client = CatalogClient(apiKey: "test-key", transport: { request in
+            let url = request.url!
+            let entry = { (num: String, qty: Int) in
+                #"{"list_id":1,"quantity":\#(qty),"include_spares":true,"set":{"set_num":"\#(num)","name":"Set \#(num)","year":2024,"num_parts":10,"set_img_url":null,"theme_id":1}}"#
+            }
+            if url.query?.contains("page=2") == true {
+                return Self.response(request, body: #"{"count":3,"next":null,"results":[\#(entry("1-1", 1))]}"#)
+            }
+            #expect(url.path == "/api/v3/users/tok/sets")
+            return Self.response(request, body: #"{"count":3,"next":"https://rebrickable.com/api/v3/users/tok/sets/?page=2","results":[\#(entry("1-1", 1)),\#(entry("2-1", 1))]}"#)
+        })
+        let sets = try await client.ownedSets(userToken: "tok")
+        #expect(sets.map(\.id) == ["1-1", "2-1"])
+        #expect(sets.first?.quantity == 2)
+    }
+
+    @Test func unknownUserTokenMeansSignedOut() async {
+        let client = CatalogClient(apiKey: "test", transport: { request in Self.response(request, body: "{}", status: 404) })
+        await #expect(throws: CatalogError.signedOut) { try await client.ownedSets(userToken: "gone") }
+    }
+
     private static func response(_ request: URLRequest, body: String, status: Int = 200) -> (Data, HTTPURLResponse) {
         (Data(body.utf8), HTTPURLResponse(url: request.url!, statusCode: status, httpVersion: nil, headerFields: nil)!)
     }

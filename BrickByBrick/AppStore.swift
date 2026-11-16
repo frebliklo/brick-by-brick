@@ -5,11 +5,15 @@ import Security
 final class AppStore {
     private(set) var builds: [SavedBuild] = []
     private(set) var apiKey = ""
+    /// Rebrickable user token from signing in; never the password.
+    private(set) var userToken = ""
+    private(set) var rebrickableUsername = ""
     var storageError: String?
     private let repository: LibraryRepository
     private var canSave = true
     private static let languageKey = "appLanguage"
     private static let appearanceKey = "appAppearance"
+    private static let usernameKey = "rebrickableUsername"
 
     /// Light, dark, or follow the device; persisted.
     var appearance: AppAppearance {
@@ -45,6 +49,8 @@ final class AppStore {
             storageError = Localization.string("Your saved collection couldn’t be read. The original file has been preserved. \(error.localizedDescription)")
         }
         apiKey = isUITesting ? "" : (Keychain.read() ?? "")
+        userToken = isUITesting ? "" : (Keychain.read(.userToken) ?? "")
+        rebrickableUsername = userToken.isEmpty ? "" : (UserDefaults.standard.string(forKey: Self.usernameKey) ?? "")
         // The practice set is only for trying the app before adding a real set.
         if builds.contains(where: { !$0.set.isSample }), builds.contains(where: { $0.set.isSample }) {
             _ = commit(builds.filter { !$0.set.isSample })
@@ -58,7 +64,20 @@ final class AppStore {
         let cleaned = value.trimmingCharacters(in: .whitespacesAndNewlines)
         try Keychain.write(cleaned)
         apiKey = cleaned
+        // A user token is only usable with an API key; disconnecting signs out too.
+        if cleaned.isEmpty { try signOut() }
     }
+
+    var isSignedIn: Bool { isConnected && !userToken.isEmpty }
+
+    func saveSignIn(username: String, token: String) throws {
+        try Keychain.write(token, .userToken)
+        userToken = token
+        rebrickableUsername = username
+        UserDefaults.standard.set(username, forKey: Self.usernameKey)
+    }
+
+    func signOut() throws { try saveSignIn(username: "", token: "") }
 
     func build(_ id: String) -> SavedBuild? { builds.first { $0.id == id } }
 
@@ -120,13 +139,14 @@ enum AppAppearance: String, CaseIterable, Identifiable, Sendable {
 }
 
 enum Keychain {
-    static var query: [String: Any] {
+    enum Item: String { case apiKey = "rebrickable-api-key", userToken = "rebrickable-user-token" }
+    static func query(_ item: Item) -> [String: Any] {
         [kSecClass as String: kSecClassGenericPassword,
          kSecAttrService as String: "com.brickbybrick.catalog",
-         kSecAttrAccount as String: "rebrickable-api-key"]
+         kSecAttrAccount as String: item.rawValue]
     }
-    static func read() -> String? {
-        var request = query
+    static func read(_ item: Item = .apiKey) -> String? {
+        var request = query(item)
         request[kSecReturnData as String] = true
         request[kSecMatchLimit as String] = kSecMatchLimitOne
         var result: CFTypeRef?
@@ -134,7 +154,8 @@ enum Keychain {
               let data = result as? Data else { return nil }
         return String(data: data, encoding: .utf8)
     }
-    static func write(_ value: String) throws {
+    static func write(_ value: String, _ item: Item = .apiKey) throws {
+        let query = query(item)
         if value.isEmpty {
             let status = SecItemDelete(query as CFDictionary)
             guard status == errSecSuccess || status == errSecItemNotFound else { throw KeychainError.failed }
@@ -151,6 +172,6 @@ enum Keychain {
     }
     enum KeychainError: LocalizedError {
         case failed
-        var errorDescription: String? { Localization.string("The API key couldn’t be saved securely. Please try again.") }
+        var errorDescription: String? { Localization.string("Your Rebrickable details couldn’t be saved securely. Please try again.") }
     }
 }

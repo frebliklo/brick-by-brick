@@ -47,6 +47,7 @@ struct SettingsView: View {
                 } header: { Text("Rebrickable catalog") } footer: {
                     Text("Your key is stored in this device’s Keychain and sent only to Rebrickable. Saved sets and checklist progress remain available offline.")
                 }
+                if store.isConnected { RebrickableAccountSection() }
                 CollectionTransferSection()
                 Section {
                     @Bindable var store = store
