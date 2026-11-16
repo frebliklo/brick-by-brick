@@ -86,7 +86,7 @@ final class BrickByBrickUITests: XCTestCase {
         let settings = app.buttons["appSettings"]
         XCTAssertTrue(settings.waitForExistence(timeout: 5), "Settings should open from the gear on the Sets page")
         settings.tap()
-        XCTAssertTrue(app.secureTextFields["apiKeyInput"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.descendants(matching: .any)["catalogSettings"].firstMatch.waitForExistence(timeout: 5))
         saveScreenshot(app, named: "iPad settings portrait")
     }
 

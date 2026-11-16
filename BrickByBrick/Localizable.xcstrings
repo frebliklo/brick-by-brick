@@ -2776,22 +2776,6 @@
         }
       }
     },
-    "Import my Rebrickable sets" : {
-      "localizations" : {
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hent mine Rebrickable-sæt"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Import my Rebrickable sets"
-          }
-        }
-      }
-    },
     "Sign out of Rebrickable" : {
       "localizations" : {
         "da" : {
@@ -2872,22 +2856,6 @@
         }
       }
     },
-    "Optional. Your password is sent once to Rebrickable to get a sign-in token; only the token is kept, in this device’s Keychain. Signed up with Google or Facebook? Set a password on Rebrickable first." : {
-      "localizations" : {
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Valgfrit. Din adgangskode sendes én gang til Rebrickable for at få et login-token; kun tokenet gemmes, i enhedens nøglering. Oprettede du dig med Google eller Facebook? Vælg først en adgangskode på Rebrickable."
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Optional. Your password is sent once to Rebrickable to get a sign-in token; only the token is kept, in this device’s Keychain. Signed up with Google or Facebook? Set a password on Rebrickable first."
-          }
-        }
-      }
-    },
     "Loading your Rebrickable sets…" : {
       "localizations" : {
         "da" : {
@@ -2936,54 +2904,6 @@
         }
       }
     },
-    "%lld sets on Rebrickable · %lld not yet in Brick by Brick" : {
-      "localizations" : {
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld sæt på Rebrickable · %lld endnu ikke i Brick by Brick"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld sets on Rebrickable · %lld not yet in Brick by Brick"
-          }
-        }
-      }
-    },
-    "Gathering %@… (%lld left)" : {
-      "localizations" : {
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Samler %@… (%lld tilbage)"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Gathering %@… (%lld left)"
-          }
-        }
-      }
-    },
-    "Add all new sets" : {
-      "localizations" : {
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tilføj alle nye sæt"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Add all new sets"
-          }
-        }
-      }
-    },
     "Rebrickable sets" : {
       "localizations" : {
         "da" : {
@@ -3000,22 +2920,6 @@
         }
       }
     },
-    "Add %@" : {
-      "localizations" : {
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tilføj %@"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Add %@"
-          }
-        }
-      }
-    },
     "You own %lld copies; one checklist is kept per set." : {
       "localizations" : {
         "da" : {
@@ -3028,6 +2932,774 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "You own %lld copies; one checklist is kept per set."
+          }
+        }
+      }
+    },
+    "A free Rebrickable key lets you search every LEGO set and get its full list of bricks." : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Med en gratis Rebrickable-nøgle kan du søge i alle LEGO-sæt og få hele listen over klodser."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A free Rebrickable key lets you search every LEGO set and get its full list of bricks."
+          }
+        }
+      }
+    },
+    "Make a free Rebrickable account" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opret en gratis Rebrickable-konto"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Make a free Rebrickable account"
+          }
+        }
+      }
+    },
+    "Open Rebrickable" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Åbn Rebrickable"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open Rebrickable"
+          }
+        }
+      }
+    },
+    "Copy your key from the API page" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kopiér din nøgle fra API-siden"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copy your key from the API page"
+          }
+        }
+      }
+    },
+    "Open the API page" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Åbn API-siden"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open the API page"
+          }
+        }
+      }
+    },
+    "Paste it here" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indsæt den her"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paste it here"
+          }
+        }
+      }
+    },
+    "You can search every LEGO set and download its bricks." : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du kan søge i alle LEGO-sæt og hente deres klodser."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You can search every LEGO set and download its bricks."
+          }
+        }
+      }
+    },
+    "Paste a new key" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indsæt en ny nøgle"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paste a new key"
+          }
+        }
+      }
+    },
+    "Check and save key" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tjek og gem nøgle"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Check and save key"
+          }
+        }
+      }
+    },
+    "Use a different key" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brug en anden nøgle"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Use a different key"
+          }
+        }
+      }
+    },
+    "API key" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "API-nøgle"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "API key"
+          }
+        }
+      }
+    },
+    "Checking your key…" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tjekker din nøgle…"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Checking your key…"
+          }
+        }
+      }
+    },
+    "Your key stays in this device’s Keychain and is only sent to Rebrickable." : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din nøgle bliver i enhedens nøglering og sendes kun til Rebrickable."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your key stays in this device’s Keychain and is only sent to Rebrickable."
+          }
+        }
+      }
+    },
+    "Bring in the sets you own" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hent de sæt, du ejer"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bring in the sets you own"
+          }
+        }
+      }
+    },
+    "Connect the catalog first. Then you can sign in to Rebrickable here." : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forbind kataloget først. Så kan du logge ind på Rebrickable her."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Connect the catalog first. Then you can sign in to Rebrickable here."
+          }
+        }
+      }
+    },
+    "Connect the catalog" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forbind kataloget"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Connect the catalog"
+          }
+        }
+      }
+    },
+    "Sign in to Rebrickable to see your set collection and add sets here in one go." : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Log ind på Rebrickable for at se din samling og tilføje sæt her på én gang."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sign in to Rebrickable to see your set collection and add sets here in one go."
+          }
+        }
+      }
+    },
+    "See every set in your Rebrickable collection" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se alle sæt i din Rebrickable-samling"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "See every set in your Rebrickable collection"
+          }
+        }
+      }
+    },
+    "Pick the ones to build again" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vælg dem, du vil bygge igen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pick the ones to build again"
+          }
+        }
+      }
+    },
+    "Your password is never saved, only a sign-in token" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din adgangskode gemmes aldrig, kun et login-token"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your password is never saved, only a sign-in token"
+          }
+        }
+      }
+    },
+    "Signing in…" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Logger ind…"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Signing in…"
+          }
+        }
+      }
+    },
+    "Signed up with Google or Facebook? Set a password on Rebrickable first." : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oprettede du dig med Google eller Facebook? Vælg først en adgangskode på Rebrickable."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Signed up with Google or Facebook? Set a password on Rebrickable first."
+          }
+        }
+      }
+    },
+    "Your Rebrickable collection is ready to browse." : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din Rebrickable-samling er klar til at blive gennemset."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your Rebrickable collection is ready to browse."
+          }
+        }
+      }
+    },
+    "See my Rebrickable sets" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se mine Rebrickable-sæt"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "See my Rebrickable sets"
+          }
+        }
+      }
+    },
+    "LEGO catalog" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LEGO-katalog"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LEGO catalog"
+          }
+        }
+      }
+    },
+    "Connected" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forbundet"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Connected"
+          }
+        }
+      }
+    },
+    "Rebrickable" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rebrickable"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rebrickable"
+          }
+        }
+      }
+    },
+    "Saved sets and checklist progress stay on this device and work offline." : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gemte sæt og tjeklister bliver på denne enhed og virker offline."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saved sets and checklist progress stay on this device and work offline."
+          }
+        }
+      }
+    },
+    "Pick sets you own to add here" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vælg sæt, du ejer, og tilføj dem her"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pick sets you own to add here"
+          }
+        }
+      }
+    },
+    "Find a set" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Find et sæt"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Find a set"
+          }
+        }
+      }
+    },
+    "Pick the sets you want to build again. We’ll gather their bricks for you." : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vælg de sæt, du vil bygge igen. Vi samler klodserne for dig."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pick the sets you want to build again. We’ll gather their bricks for you."
+          }
+        }
+      }
+    },
+    "Not added yet · %lld" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ikke tilføjet endnu · %lld"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Not added yet · %lld"
+          }
+        }
+      }
+    },
+    "Clear" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ryd"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clear"
+          }
+        }
+      }
+    },
+    "Select all" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vælg alle"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Select all"
+          }
+        }
+      }
+    },
+    "No sets match “%@”." : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen sæt matcher “%@”."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No sets match “%@”."
+          }
+        }
+      }
+    },
+    "Already in Brick by Brick · %lld" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Allerede i Brick by Brick · %lld"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Already in Brick by Brick · %lld"
+          }
+        }
+      }
+    },
+    "Double-tap to select or deselect" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tryk to gange for at vælge eller fravælge"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Double-tap to select or deselect"
+          }
+        }
+      }
+    },
+    "Gathering %@…" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Samler %@…"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gathering %@…"
+          }
+        }
+      }
+    },
+    "%lld of %lld" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld af %lld"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld of %lld"
+          }
+        }
+      }
+    },
+    "Stop after this set" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stop efter dette sæt"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stop after this set"
+          }
+        }
+      }
+    },
+    "Pick sets to add" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vælg sæt at tilføje"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pick sets to add"
+          }
+        }
+      }
+    },
+    "Add %lld sets" : {
+      "localizations" : {
+        "da" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Tilføj %lld sæt"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Tilføj %lld sæt"
+                }
+              }
+            }
+          }
+        },
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Add %lld set"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Add %lld sets"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "All %lld sets are already here. Nice!" : {
+      "localizations" : {
+        "da" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Dit sæt er allerede her. Godt gået!"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Alle %lld sæt er allerede her. Godt gået!"
+                }
+              }
+            }
+          }
+        },
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Your set is already here. Nice!"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "All %lld sets are already here. Nice!"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Not set up yet" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ikke sat op endnu"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Not set up yet"
+          }
+        }
+      }
+    },
+    "Sign in to bring in your sets" : {
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Log ind for at hente dine sæt"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sign in to bring in your sets"
           }
         }
       }

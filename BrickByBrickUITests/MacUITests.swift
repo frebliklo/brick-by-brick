@@ -55,7 +55,7 @@ final class MacUITests: XCTestCase {
         homeScreenshot.lifetime = .keepAlways
         add(homeScreenshot)
         app.buttons["appSettings"].click()
-        XCTAssertTrue(app.secureTextFields["apiKeyInput"].waitForExistence(timeout: 5), "The gear should open Settings")
+        XCTAssertTrue(app.descendants(matching: .any)["catalogSettings"].firstMatch.waitForExistence(timeout: 5), "The gear should open Settings")
         app.typeKey("w", modifierFlags: .command)
         latest.click()
         XCTAssertTrue(quantity.waitForExistence(timeout: 5))

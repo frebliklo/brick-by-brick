@@ -4,10 +4,6 @@ struct SettingsView: View {
     var isSheet = false
     @Environment(AppStore.self) private var store
     @Environment(\.dismiss) private var dismiss
-    @State private var key = ""
-    @State private var message: String?
-    @State private var validating = false
-    @State private var confirmDisconnect = false
 
     var body: some View {
         NavigationStack {
@@ -22,32 +18,19 @@ struct SettingsView: View {
                     }.padding(.vertical, 12)
                 }
                 Section {
-                    Label(store.isConnected ? LocalizedStringKey("Catalog connected") : LocalizedStringKey("Connect your catalog"), systemImage: store.isConnected ? "checkmark.circle.fill" : "link")
-                        .foregroundStyle(store.isConnected ? Palette.green : Palette.ink)
-                    Text("Use a free Rebrickable API key to search LEGO sets and download their complete brick inventories.")
-                        .font(.subheadline).foregroundStyle(Palette.muted)
-                    Link("1. Create a free Rebrickable account ↗", destination: URL(string: "https://rebrickable.com/register/")!)
-                    Link("2. Get a key from Rebrickable’s API page ↗", destination: URL(string: "https://rebrickable.com/api/")!)
-                    SecureField("3. Paste your API key", text: $key)
-                        .textContentType(.password).autocorrectionDisabled().disableMobileAutocapitalization()
-                        .accessibilityIdentifier("apiKeyInput")
-                    Button {
-                        validating = true
-                    } label: {
-                        HStack {
-                            Text(store.isConnected ? LocalizedStringKey("Verify and update key") : LocalizedStringKey("Connect catalog"))
-                            Spacer()
-                            if validating { ProgressView() } else { Image(systemName: "arrow.right") }
-                        }
-                    }.disabled(validating || key.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
-                    if let message { Text(message).font(.footnote).foregroundStyle(Palette.muted) }
-                    if store.isConnected {
-                        Button("Disconnect catalog", role: .destructive) { confirmDisconnect = true }
-                    }
-                } header: { Text("Rebrickable catalog") } footer: {
-                    Text("Your key is stored in this device’s Keychain and sent only to Rebrickable. Saved sets and checklist progress remain available offline.")
+                    NavigationLink { CatalogConnectionView() } label: {
+                        ConnectionRow(title: "LEGO catalog",
+                                      status: store.isConnected ? Text("Connected") : Text("Not set up yet"),
+                                      connected: store.isConnected, systemImage: "magnifyingglass")
+                    }.accessibilityIdentifier("catalogSettings")
+                    NavigationLink { RebrickableAccountView() } label: {
+                        ConnectionRow(title: "Rebrickable sets",
+                                      status: store.isSignedIn ? Text("Signed in as \(store.rebrickableUsername)") : Text("Sign in to bring in your sets"),
+                                      connected: store.isSignedIn, systemImage: "shippingbox")
+                    }.accessibilityIdentifier("rebrickableSettings")
+                } header: { Text("Rebrickable") } footer: {
+                    Text("Saved sets and checklist progress stay on this device and work offline.")
                 }
-                if store.isConnected { RebrickableAccountSection() }
                 CollectionTransferSection()
                 Section {
                     @Bindable var store = store
@@ -84,24 +67,6 @@ struct SettingsView: View {
             }.desktopFormStyle().scrollContentBackground(.hidden).pageWidth(760).background(Palette.background)
                 .navigationTitle("Settings").inlineNavigationTitle()
                 .toolbar { if isSheet { ToolbarItem(placement: .confirmationAction) { Button("Done") { dismiss() } } } }
-                .task(id: validating) {
-                    guard validating else { return }
-                    do {
-                        let cleaned = key.trimmingCharacters(in: .whitespacesAndNewlines)
-                        _ = try await CatalogClient(apiKey: cleaned).search("31124")
-                        try Task.checkCancellation()
-                        try store.saveKey(cleaned)
-                        key = ""
-                        message = Localization.string("Connected. You’re ready to find your sets.")
-                    } catch { if !Task.isCancelled { message = error.localizedDescription } }
-                    validating = false
-                }
-                .confirmationDialog("Disconnect the catalog? Your saved checklists will stay on this device.", isPresented: $confirmDisconnect, titleVisibility: .visible) {
-                    Button("Disconnect", role: .destructive) {
-                        do { try store.saveKey(""); message = nil; key = "" }
-                        catch { message = error.localizedDescription }
-                    }
-                }
         }.macSheetSize(width: 540, height: 540)
     }
 }

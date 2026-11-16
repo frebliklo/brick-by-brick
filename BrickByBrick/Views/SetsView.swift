@@ -21,10 +21,11 @@ struct SetsView: View {
     private var isSearchingCatalog: Bool { !query.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }
 
     private enum PresentedSheet: Identifiable {
-        case settings, collection(CollectionArchive)
+        case settings, rebrickable, collection(CollectionArchive)
         var id: String {
             switch self {
             case .settings: "settings"
+            case .rebrickable: "rebrickable"
             case .collection(let archive): "collection-\(archive.exportedAt.timeIntervalSince1970)"
             }
         }
@@ -68,6 +69,26 @@ struct SetsView: View {
                         }.buttonStyle(.plain)
                     }
 
+                    if store.isSignedIn, !isSearchingCatalog {
+                        Button { sheet = .rebrickable } label: {
+                            HStack(spacing: 14) {
+                                Image(systemName: "shippingbox.fill").font(.title2).foregroundStyle(.white)
+                                    .frame(width: 48, height: 48).background(Palette.orange, in: RoundedRectangle(cornerRadius: 14))
+                                VStack(alignment: .leading, spacing: 3) {
+                                    Text("Your Rebrickable sets").font(.headline).foregroundStyle(Palette.ink)
+                                    Text("Pick sets you own to add here").font(.subheadline).foregroundStyle(Palette.muted)
+                                }
+                                Spacer(minLength: 8)
+                                Image(systemName: "chevron.right").font(.subheadline.weight(.semibold)).foregroundStyle(Palette.muted)
+                            }
+                            .padding(14).background(Palette.surface, in: RoundedRectangle(cornerRadius: 20))
+                            .overlay(RoundedRectangle(cornerRadius: 20).strokeBorder(Palette.line))
+                            .contentShape(RoundedRectangle(cornerRadius: 20))
+                        }
+                        .buttonStyle(PressableStyle())
+                        .accessibilityIdentifier("homeRebrickableSets")
+                    }
+
                     if isSearchingCatalog {
                         if store.isConnected { searchResults }
                         else { InlineMessage(text: Text("Connect the catalog to search real LEGO sets by name or the number on your box.")) }
@@ -83,6 +104,7 @@ struct SetsView: View {
             .sheet(item: $sheet) { item in
                 switch item {
                 case .settings: SettingsView(isSheet: true)
+                case .rebrickable: NavigationStack { RebrickableSetsView(isSheet: true) }
                 case .collection(let archive): CollectionImportView(archive: archive)
                 }
             }
