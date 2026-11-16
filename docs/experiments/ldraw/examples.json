@@ -1,0 +1,10 @@
+[
+  {"id":"yellow-brick","part":"3001.dat","color":14,"label":"Brick 2 × 4","colorLabel":"Yellow"},
+  {"id":"white-brick","part":"3003.dat","color":15,"label":"Brick 2 × 2","colorLabel":"White"},
+  {"id":"green-plate","part":"3020.dat","color":2,"label":"Plate 2 × 4","colorLabel":"Green"},
+  {"id":"red-slope","part":"3039.dat","color":4,"label":"Slope 45° 2 × 2","colorLabel":"Red"},
+  {"id":"blue-tile","part":"3069b.dat","color":1,"label":"Tile 1 × 2 with groove","colorLabel":"Blue"},
+  {"id":"technic-brick","part":"3700.dat","color":4,"label":"Technic brick 1 × 2","colorLabel":"Red"},
+  {"id":"printed-brick","part":"3001p08.dat","color":14,"label":"Brick with eyes and mouth","colorLabel":"Yellow + fixed print"},
+  {"id":"clear-brick","part":"3001.dat","color":47,"label":"Brick 2 × 4","colorLabel":"Trans-clear"}
+]

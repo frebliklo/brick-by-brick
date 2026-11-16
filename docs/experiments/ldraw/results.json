@@ -1,0 +1,351 @@
+{
+  "createdAt": "2026-11-16T08:47:09.765Z",
+  "browser": "157.0.8103.52",
+  "renderer": "three@0.181.0",
+  "backend": "Headless Chrome with SwiftShader; not an iPad benchmark",
+  "dimensions": [
+    800,
+    600
+  ],
+  "recipe": {
+    "camera": [
+      1,
+      0.85,
+      1.3
+    ],
+    "projection": "orthographic",
+    "output": "sRGB",
+    "toneMapping": "neutral",
+    "hemisphereIntensity": 2,
+    "keyIntensity": 2.4,
+    "fillIntensity": 0.6
+  },
+  "checks": [
+    "Complete dependency closure",
+    "Finite nonempty geometry",
+    "Known brick/plate/tile dimensions",
+    "Fixed print colors retained",
+    "Transparent material retained",
+    "Same geometry across colors",
+    "No loader errors or material warnings",
+    "Interactive part selection, underside button, and drag rotation"
+  ],
+  "warnings": [
+    "[.WebGL-0x12c0059de00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x12c0059de00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x12c0059de00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x12c0059de00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+  ],
+  "results": [
+    {
+      "id": "yellow-brick",
+      "part": "3001.dat",
+      "color": 14,
+      "label": "Brick 2 × 4",
+      "colorLabel": "Yellow",
+      "dependencyFiles": 10,
+      "packedBytes": 12032,
+      "sha256": "7605311f3af13f78eeee6bd05e035a81147f3c33f672f1131853e87fd29b0b80",
+      "sourceTitle": "Brick  2 x  4",
+      "catalogMapping": "Manually selected LDraw example; Rebrickable mapping not tested",
+      "boundsLDU": [
+        80,
+        28,
+        40
+      ],
+      "triangles": 700,
+      "meshes": 1,
+      "materials": [
+        {
+          "name": "Yellow",
+          "color": "fac80a",
+          "opacity": 1,
+          "transparent": false
+        }
+      ],
+      "loadAndRenderMs": 0.5,
+      "angles": {
+        "front": {
+          "pngBytes": 35964,
+          "renderAndEncodeMs": 355.6
+        },
+        "under": {
+          "pngBytes": 40093,
+          "renderAndEncodeMs": 30.5
+        }
+      }
+    },
+    {
+      "id": "white-brick",
+      "part": "3003.dat",
+      "color": 15,
+      "label": "Brick 2 × 2",
+      "colorLabel": "White",
+      "dependencyFiles": 12,
+      "packedBytes": 12570,
+      "sha256": "2c92a5fbf89d08a33beb153eabb629f2d5b94f8acf6ec335a991791f40d26a38",
+      "sourceTitle": "Brick  2 x  2",
+      "catalogMapping": "Manually selected LDraw example; Rebrickable mapping not tested",
+      "boundsLDU": [
+        40,
+        28,
+        40
+      ],
+      "triangles": 316,
+      "meshes": 1,
+      "materials": [
+        {
+          "name": "White",
+          "color": "f4f4f4",
+          "opacity": 1,
+          "transparent": false
+        }
+      ],
+      "loadAndRenderMs": 5.8,
+      "angles": {
+        "front": {
+          "pngBytes": 31898,
+          "renderAndEncodeMs": 34.2
+        },
+        "under": {
+          "pngBytes": 33156,
+          "renderAndEncodeMs": 31.6
+        }
+      }
+    },
+    {
+      "id": "green-plate",
+      "part": "3020.dat",
+      "color": 2,
+      "label": "Plate 2 × 4",
+      "colorLabel": "Green",
+      "dependencyFiles": 8,
+      "packedBytes": 10439,
+      "sha256": "d7f4331dd07c611cb68a76c365adbf8a98f763e2fc897bdaaf1e8307dad13ca9",
+      "sourceTitle": "Plate  2 x  4",
+      "catalogMapping": "Manually selected LDraw example; Rebrickable mapping not tested",
+      "boundsLDU": [
+        80,
+        12,
+        40
+      ],
+      "triangles": 700,
+      "meshes": 1,
+      "materials": [
+        {
+          "name": "Green",
+          "color": "00852b",
+          "opacity": 1,
+          "transparent": false
+        }
+      ],
+      "loadAndRenderMs": 6.5,
+      "angles": {
+        "front": {
+          "pngBytes": 35289,
+          "renderAndEncodeMs": 23.3
+        },
+        "under": {
+          "pngBytes": 43889,
+          "renderAndEncodeMs": 56.7
+        }
+      }
+    },
+    {
+      "id": "red-slope",
+      "part": "3039.dat",
+      "color": 4,
+      "label": "Slope 45° 2 × 2",
+      "colorLabel": "Red",
+      "dependencyFiles": 17,
+      "packedBytes": 18804,
+      "sha256": "323b8cb124056a0a0531a979926bea393a6882d2fa11afdf6a9f4e47dd77c4ce",
+      "sourceTitle": "Slope Brick 45  2 x  2",
+      "catalogMapping": "Manually selected LDraw example; Rebrickable mapping not tested",
+      "boundsLDU": [
+        40,
+        28,
+        40
+      ],
+      "triangles": 352,
+      "meshes": 1,
+      "materials": [
+        {
+          "name": "Red",
+          "color": "b40000",
+          "opacity": 1,
+          "transparent": false
+        }
+      ],
+      "loadAndRenderMs": 5.9,
+      "angles": {
+        "front": {
+          "pngBytes": 27559,
+          "renderAndEncodeMs": 29.5
+        },
+        "under": {
+          "pngBytes": 34951,
+          "renderAndEncodeMs": 23.7
+        }
+      }
+    },
+    {
+      "id": "blue-tile",
+      "part": "3069b.dat",
+      "color": 1,
+      "label": "Tile 1 × 2 with groove",
+      "colorLabel": "Blue",
+      "dependencyFiles": 4,
+      "packedBytes": 3080,
+      "sha256": "1189d866f7e7ad0b69fa8b0ed70f207b5c5a71250c755ce54d7e78d72ac10e14",
+      "sourceTitle": "Tile  1 x  2 with Groove",
+      "catalogMapping": "Manually selected LDraw example; Rebrickable mapping not tested",
+      "boundsLDU": [
+        40,
+        8,
+        20
+      ],
+      "triangles": 44,
+      "meshes": 1,
+      "materials": [
+        {
+          "name": "Blue",
+          "color": "1e5aa8",
+          "opacity": 1,
+          "transparent": false
+        }
+      ],
+      "loadAndRenderMs": 3.5,
+      "angles": {
+        "front": {
+          "pngBytes": 22308,
+          "renderAndEncodeMs": 27.8
+        },
+        "under": {
+          "pngBytes": 32593,
+          "renderAndEncodeMs": 20.8
+        }
+      }
+    },
+    {
+      "id": "technic-brick",
+      "part": "3700.dat",
+      "color": 4,
+      "label": "Technic brick 1 × 2",
+      "colorLabel": "Red",
+      "dependencyFiles": 17,
+      "packedBytes": 23116,
+      "sha256": "b8355e559d002fef1aa0731c326080d5a636b95462d42d1ea064081a1ee9edde",
+      "sourceTitle": "Technic Brick  1 x  2 with Hole",
+      "catalogMapping": "Manually selected LDraw example; Rebrickable mapping not tested",
+      "boundsLDU": [
+        40,
+        28,
+        20
+      ],
+      "triangles": 550,
+      "meshes": 1,
+      "materials": [
+        {
+          "name": "Red",
+          "color": "b40000",
+          "opacity": 1,
+          "transparent": false
+        }
+      ],
+      "loadAndRenderMs": 5.9,
+      "angles": {
+        "front": {
+          "pngBytes": 44682,
+          "renderAndEncodeMs": 28.2
+        },
+        "under": {
+          "pngBytes": 44207,
+          "renderAndEncodeMs": 26.3
+        }
+      }
+    },
+    {
+      "id": "printed-brick",
+      "part": "3001p08.dat",
+      "color": 14,
+      "label": "Brick with eyes and mouth",
+      "colorLabel": "Yellow + fixed print",
+      "dependencyFiles": 10,
+      "packedBytes": 29102,
+      "sha256": "9e25120a9d494b97762a259066719f36c45986d7463f22e2f5b56d35b50b09fc",
+      "sourceTitle": "Brick  2 x  4 with Eyes and Wavy Mouth Pattern",
+      "catalogMapping": "Manually selected LDraw example; Rebrickable mapping not tested",
+      "boundsLDU": [
+        80,
+        28,
+        40
+      ],
+      "triangles": 1124,
+      "meshes": 1,
+      "materials": [
+        {
+          "name": "Black",
+          "color": "1b2a34",
+          "opacity": 1,
+          "transparent": false
+        },
+        {
+          "name": "Yellow",
+          "color": "fac80a",
+          "opacity": 1,
+          "transparent": false
+        }
+      ],
+      "loadAndRenderMs": 8.1,
+      "angles": {
+        "front": {
+          "pngBytes": 41731,
+          "renderAndEncodeMs": 38.7
+        },
+        "under": {
+          "pngBytes": 45533,
+          "renderAndEncodeMs": 29.3
+        }
+      }
+    },
+    {
+      "id": "clear-brick",
+      "part": "3001.dat",
+      "color": 47,
+      "label": "Brick 2 × 4",
+      "colorLabel": "Trans-clear",
+      "dependencyFiles": 10,
+      "packedBytes": 12032,
+      "sha256": "355cf3ee15ea7c28dc767eb31153e75700068b930a4aac7ac1e1c1063769c2e6",
+      "sourceTitle": "Brick  2 x  4",
+      "catalogMapping": "Manually selected LDraw example; Rebrickable mapping not tested",
+      "boundsLDU": [
+        80,
+        28,
+        40
+      ],
+      "triangles": 700,
+      "meshes": 1,
+      "materials": [
+        {
+          "name": "Trans_Clear",
+          "color": "fcfcfc",
+          "opacity": 0.5019607843137255,
+          "transparent": true
+        }
+      ],
+      "loadAndRenderMs": 25.4,
+      "angles": {
+        "front": {
+          "pngBytes": 79959,
+          "renderAndEncodeMs": 317.4
+        },
+        "under": {
+          "pngBytes": 81783,
+          "renderAndEncodeMs": 32.7
+        }
+      }
+    }
+  ]
+}

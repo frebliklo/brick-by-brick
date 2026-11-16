@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>LDraw rendering experiment</title>
+<style>
+body{margin:0;background:#f7f5ef;color:#263c31;font:16px system-ui,sans-serif}main{max-width:1000px;margin:auto;padding:24px}h1{font-size:28px;margin:0 0 8px}p{color:#626b63;line-height:1.5}nav{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:24px 0}button,select{font:inherit;padding:12px;border:1px solid #bdc6bb;border-radius:12px;background:white;color:#263c31}button{cursor:pointer}canvas{width:100%;height:auto;display:block;border-radius:24px;background:white;touch-action:none}#status{white-space:pre-wrap;font:13px ui-monospace,monospace}a{color:#32664f}footer{font-size:13px;margin-top:24px}label{display:flex;gap:8px;align-items:center}
+</style>
+<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}</script>
+</head><body><main>
+<h1>Actual LDraw geometry</h1><p>Research experiment · drag to rotate, scroll to zoom. Models are manually selected examples; catalog mapping has not been validated.</p>
+<nav><label>Part <select id="parts" aria-label="Choose a part"></select></label><button id="front">Three-quarter</button><button id="under">Underside</button></nav>
+<canvas id="view" width="800" height="600" aria-label="Rotatable LDraw part"></canvas><p id="status" role="status">Loading local model…</p>
+<p><a href="gallery.html">View the rendered comparison sheet</a></p>
+<footer>Geometry and materials: <a href="https://www.ldraw.org/">LDraw Parts Library</a>. Rendering: Three.js r181. See manifest.json for individual source files, authors, licenses, and checksums.</footer>
+</main><script type="module" src="viewer.mjs"></script></body></html>

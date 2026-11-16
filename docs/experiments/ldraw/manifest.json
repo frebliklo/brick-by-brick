@@ -1,0 +1,589 @@
+{
+  "retrievedAt": "2026-11-16T08:40:59.406240+00:00",
+  "source": "https://library.ldraw.org/library/official/",
+  "renderer": "three@0.181.0 LDrawLoader",
+  "examples": [
+    {
+      "id": "yellow-brick",
+      "part": "3001.dat",
+      "color": 14,
+      "label": "Brick 2 \u00d7 4",
+      "colorLabel": "Yellow",
+      "dependencyFiles": 10,
+      "packedBytes": 12032,
+      "sha256": "7605311f3af13f78eeee6bd05e035a81147f3c33f672f1131853e87fd29b0b80",
+      "sourceTitle": "Brick  2 x  4",
+      "catalogMapping": "Manually selected LDraw example; Rebrickable mapping not tested"
+    },
+    {
+      "id": "white-brick",
+      "part": "3003.dat",
+      "color": 15,
+      "label": "Brick 2 \u00d7 2",
+      "colorLabel": "White",
+      "dependencyFiles": 12,
+      "packedBytes": 12570,
+      "sha256": "2c92a5fbf89d08a33beb153eabb629f2d5b94f8acf6ec335a991791f40d26a38",
+      "sourceTitle": "Brick  2 x  2",
+      "catalogMapping": "Manually selected LDraw example; Rebrickable mapping not tested"
+    },
+    {
+      "id": "green-plate",
+      "part": "3020.dat",
+      "color": 2,
+      "label": "Plate 2 \u00d7 4",
+      "colorLabel": "Green",
+      "dependencyFiles": 8,
+      "packedBytes": 10439,
+      "sha256": "d7f4331dd07c611cb68a76c365adbf8a98f763e2fc897bdaaf1e8307dad13ca9",
+      "sourceTitle": "Plate  2 x  4",
+      "catalogMapping": "Manually selected LDraw example; Rebrickable mapping not tested"
+    },
+    {
+      "id": "red-slope",
+      "part": "3039.dat",
+      "color": 4,
+      "label": "Slope 45\u00b0 2 \u00d7 2",
+      "colorLabel": "Red",
+      "dependencyFiles": 17,
+      "packedBytes": 18804,
+      "sha256": "323b8cb124056a0a0531a979926bea393a6882d2fa11afdf6a9f4e47dd77c4ce",
+      "sourceTitle": "Slope Brick 45  2 x  2",
+      "catalogMapping": "Manually selected LDraw example; Rebrickable mapping not tested"
+    },
+    {
+      "id": "blue-tile",
+      "part": "3069b.dat",
+      "color": 1,
+      "label": "Tile 1 \u00d7 2 with groove",
+      "colorLabel": "Blue",
+      "dependencyFiles": 4,
+      "packedBytes": 3080,
+      "sha256": "1189d866f7e7ad0b69fa8b0ed70f207b5c5a71250c755ce54d7e78d72ac10e14",
+      "sourceTitle": "Tile  1 x  2 with Groove",
+      "catalogMapping": "Manually selected LDraw example; Rebrickable mapping not tested"
+    },
+    {
+      "id": "technic-brick",
+      "part": "3700.dat",
+      "color": 4,
+      "label": "Technic brick 1 \u00d7 2",
+      "colorLabel": "Red",
+      "dependencyFiles": 17,
+      "packedBytes": 23116,
+      "sha256": "b8355e559d002fef1aa0731c326080d5a636b95462d42d1ea064081a1ee9edde",
+      "sourceTitle": "Technic Brick  1 x  2 with Hole",
+      "catalogMapping": "Manually selected LDraw example; Rebrickable mapping not tested"
+    },
+    {
+      "id": "printed-brick",
+      "part": "3001p08.dat",
+      "color": 14,
+      "label": "Brick with eyes and mouth",
+      "colorLabel": "Yellow + fixed print",
+      "dependencyFiles": 10,
+      "packedBytes": 29102,
+      "sha256": "9e25120a9d494b97762a259066719f36c45986d7463f22e2f5b56d35b50b09fc",
+      "sourceTitle": "Brick  2 x  4 with Eyes and Wavy Mouth Pattern",
+      "catalogMapping": "Manually selected LDraw example; Rebrickable mapping not tested"
+    },
+    {
+      "id": "clear-brick",
+      "part": "3001.dat",
+      "color": 47,
+      "label": "Brick 2 \u00d7 4",
+      "colorLabel": "Trans-clear",
+      "dependencyFiles": 10,
+      "packedBytes": 12032,
+      "sha256": "355cf3ee15ea7c28dc767eb31153e75700068b930a4aac7ac1e1c1063769c2e6",
+      "sourceTitle": "Brick  2 x  4",
+      "catalogMapping": "Manually selected LDraw example; Rebrickable mapping not tested"
+    }
+  ],
+  "files": [
+    {
+      "name": "1-4cyls.dat",
+      "url": "https://library.ldraw.org/library/official/p/1-4cyls.dat",
+      "sha256": "d45980725c5d006cab357fd1afff1469b1a9fc1d2791aa6afd162a2db582c7f9",
+      "bytes": 1081,
+      "authors": [
+        "Author: James Jessiman"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "2-4chrd.dat",
+      "url": "https://library.ldraw.org/library/official/p/2-4chrd.dat",
+      "sha256": "6b1b3d8ccc50f3477109a2dd220a151e76671c8ca3b1b276c81a72d0a4d4daf0",
+      "bytes": 475,
+      "authors": [
+        "Author: Philippe Hurbain [Philo]"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "2-4cyli.dat",
+      "url": "https://library.ldraw.org/library/official/p/2-4cyli.dat",
+      "sha256": "57b7479c754bd98d8a17668b58dba8aed3539598da4c8374e24e417bfda885b4",
+      "bytes": 1509,
+      "authors": [
+        "Author: James Jessiman"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "2-4edge.dat",
+      "url": "https://library.ldraw.org/library/official/p/2-4edge.dat",
+      "sha256": "ec42084755c0f7c2fa9ac3a07f088f56d1ccf218e73dffbf32115fec96f82070",
+      "bytes": 661,
+      "authors": [
+        "Author: James Jessiman"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "2-4ndis.dat",
+      "url": "https://library.ldraw.org/library/official/p/2-4ndis.dat",
+      "sha256": "2ef5d3fceed3513b90ede773d624acb657dee425d8ccae0ff9ae57d61a7c74ab",
+      "bytes": 850,
+      "authors": [
+        "Author: James Jessiman"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "3001.dat",
+      "url": "https://library.ldraw.org/library/official/parts/3001.dat",
+      "sha256": "798283181d352fa0ccce2a212a39020f020e2522ae93801c73a53bda63e41c65",
+      "bytes": 643,
+      "authors": [
+        "Author: James Jessiman"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "3001p08.dat",
+      "url": "https://library.ldraw.org/library/official/parts/3001p08.dat",
+      "sha256": "f711f61928df765a09b41c8ae0ffad1eb05931bf1a70264f39e40e866106ef1b",
+      "bytes": 17707,
+      "authors": [
+        "Author: Damien Roux [Darats]"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "3003.dat",
+      "url": "https://library.ldraw.org/library/official/parts/3003.dat",
+      "sha256": "134fc6f2e6db3b6474ab9d0d71474d574d3eca8bfe1af38e86f9367e6d8b62b1",
+      "bytes": 651,
+      "authors": [
+        "Author: James Jessiman"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "3020.dat",
+      "url": "https://library.ldraw.org/library/official/parts/3020.dat",
+      "sha256": "cb96b720d20b6bf0f7ebfab487988861f961349e121f01593f441d22b59e897a",
+      "bytes": 1301,
+      "authors": [
+        "Author: James Jessiman"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "3039.dat",
+      "url": "https://library.ldraw.org/library/official/parts/3039.dat",
+      "sha256": "e6fb7adddd9131403ab657bd592a1dd674f2f66cc7818d681d4cebe9fb8046ae",
+      "bytes": 529,
+      "authors": [
+        "Author: James Jessiman"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "3069b.dat",
+      "url": "https://library.ldraw.org/library/official/parts/3069b.dat",
+      "sha256": "c2337110a8a28ccc598e9d0d2e17199953c64807ad2e8e3e4173c7456f067241",
+      "bytes": 363,
+      "authors": [
+        "Author: Santeri Piippo [arezey]"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "3700.dat",
+      "url": "https://library.ldraw.org/library/official/parts/3700.dat",
+      "sha256": "3efe942f3e5f2db3cf839ed1bd5201f2b7d5144d2de4a5ff226a37dad800ad4e",
+      "bytes": 2306,
+      "authors": [
+        "Author: James Jessiman"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "4-4cyli.dat",
+      "url": "https://library.ldraw.org/library/official/p/4-4cyli.dat",
+      "sha256": "f832bd6e12c156e327b20dc954562942f62eda834effb114827a7664c27f82b9",
+      "bytes": 2637,
+      "authors": [
+        "Author: James Jessiman"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "4-4disc.dat",
+      "url": "https://library.ldraw.org/library/official/p/4-4disc.dat",
+      "sha256": "8853bc34639ef69cdaf1e2c0b090597415cec2fefe56eb93f7915e48b5782dcf",
+      "bytes": 1105,
+      "authors": [
+        "Author: James Jessiman"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "4-4edge.dat",
+      "url": "https://library.ldraw.org/library/official/p/4-4edge.dat",
+      "sha256": "507d698a5890b49bf7c2f6472c847d41139529e06a2dd7bfd315dc9ec9fd9bcc",
+      "bytes": 1052,
+      "authors": [
+        "Author: James Jessiman"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "4-4ndis.dat",
+      "url": "https://library.ldraw.org/library/official/p/4-4ndis.dat",
+      "sha256": "640b303813c6911e5a2cdf017009db11a6acbb91b78b6ba5db9c27367fc76c79",
+      "bytes": 1187,
+      "authors": [
+        "Author: James Jessiman"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "4-4ring2.dat",
+      "url": "https://library.ldraw.org/library/official/p/4-4ring2.dat",
+      "sha256": "3c59fac484babc9d0c0e0af302e80c632a780f55bb55969b192bf9a726b6c0e7",
+      "bytes": 1594,
+      "authors": [
+        "Author: James Jessiman"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "4-4ring3.dat",
+      "url": "https://library.ldraw.org/library/official/p/4-4ring3.dat",
+      "sha256": "c0366e481b9f253ee64ed4de8324221e78cf3576d492e80f470ef59caf35db43",
+      "bytes": 1594,
+      "authors": [
+        "Author: James Jessiman"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "box2-5.dat",
+      "url": "https://library.ldraw.org/library/official/p/box2-5.dat",
+      "sha256": "6ce3937a30798c2812e512d827c581869ce731fca1e6eb350082bc7918a57eb5",
+      "bytes": 586,
+      "authors": [
+        "Author: Steffen [Steffen]"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "box3u2p.dat",
+      "url": "https://library.ldraw.org/library/official/p/box3u2p.dat",
+      "sha256": "eb3d043498e04f5404391d97fda0f1251dd675a334bb067080bc65c313771740",
+      "bytes": 790,
+      "authors": [
+        "Author: Niels Karsdorp [nielsk]"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "box3u4a.dat",
+      "url": "https://library.ldraw.org/library/official/p/box3u4a.dat",
+      "sha256": "914d9b2958b66e88375fa228363ef3134653b6eb4101892f89f1c8c06ab6ab61",
+      "bytes": 522,
+      "authors": [
+        "Author: Niels Karsdorp [nielsk]"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "box4-4a.dat",
+      "url": "https://library.ldraw.org/library/official/p/box4-4a.dat",
+      "sha256": "58c69e00462c0a74c1bd6d75d757d826ae13e98bd3928b0e685209003bfbee54",
+      "bytes": 1067,
+      "authors": [
+        "Author: Willy Tschager [Holly-Wood]"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "box4.dat",
+      "url": "https://library.ldraw.org/library/official/p/box4.dat",
+      "sha256": "a5e0c7846eecadf3f71c51d1b966412d6aa9f6e7bd80974aa52d5060262cc3fb",
+      "bytes": 916,
+      "authors": [
+        "Author: James Jessiman"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "box5.dat",
+      "url": "https://library.ldraw.org/library/official/p/box5.dat",
+      "sha256": "1f9b3c5e092c0fdcaa3f34aac48d8e3d25cd1f4bc42db2589390091162c949df",
+      "bytes": 930,
+      "authors": [
+        "Author: James Jessiman"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "cylj4x8.dat",
+      "url": "https://library.ldraw.org/library/official/p/cylj4x8.dat",
+      "sha256": "28f376b66194c279b45d02df2f976dc75f5d07b8f1f373736014b8c47ec882c5",
+      "bytes": 3966,
+      "authors": [
+        "Author: Willy Tschager [Holly-Wood]"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "peghole.dat",
+      "url": "https://library.ldraw.org/library/official/p/peghole.dat",
+      "sha256": "c1437fd0ce09cab844dca2d0419434c5b652a81f91421718db7e77d8c3291778",
+      "bytes": 790,
+      "authors": [
+        "Author: James Jessiman"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "rect.dat",
+      "url": "https://library.ldraw.org/library/official/p/rect.dat",
+      "sha256": "ffeb2dd3d9b83c38841f18f1f74800fbba9e90c5fb6badfff2a795f08a96cb71",
+      "bytes": 654,
+      "authors": [
+        "Author: James Jessiman"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "rect2p.dat",
+      "url": "https://library.ldraw.org/library/official/p/rect2p.dat",
+      "sha256": "66dccbcf437206dc951003b1c293c572114e8b14c7d44bbeeb8c557c7c237507",
+      "bytes": 575,
+      "authors": [
+        "Author: Donald Sutter [technog]"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "s/3001s01.dat",
+      "url": "https://library.ldraw.org/library/official/parts/s/3001s01.dat",
+      "sha256": "1eadb49997c5ae51e7b9786c87c808da0e728c30765ae67f07719d0fa87f4027",
+      "bytes": 1416,
+      "authors": [
+        "Author: James Jessiman"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "s/3003s01.dat",
+      "url": "https://library.ldraw.org/library/official/parts/s/3003s01.dat",
+      "sha256": "b0540235415047ee39e6740e3d5accef769dff0e4d30e6f4ad2001b46720e4f1",
+      "bytes": 446,
+      "authors": [
+        "Author: Steffen [Steffen]"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "s/3003s02.dat",
+      "url": "https://library.ldraw.org/library/official/parts/s/3003s02.dat",
+      "sha256": "61340b5e5fc3b921bccad1fd8ae90d422ff3a688ab552e31b5cc5ac4adb8bd39",
+      "bytes": 690,
+      "authors": [
+        "Author: Owen Burgoyne [C3POwen]"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "s/3039s01.dat",
+      "url": "https://library.ldraw.org/library/official/parts/s/3039s01.dat",
+      "sha256": "82c7ca6620d3c74906aa1c5f434eba0b8600bc4ce5402be274b42538e7ab2e53",
+      "bytes": 2760,
+      "authors": [
+        "Author: Willy Tschager [Holly-Wood]"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "s/3069bs01.dat",
+      "url": "https://library.ldraw.org/library/official/parts/s/3069bs01.dat",
+      "sha256": "4a94c6269d900b4aa32066efe5feebf9b3ea0cc4a7526d7ee3ff732e995a804c",
+      "bytes": 716,
+      "authors": [
+        "Author: Santeri Piippo [arezey]"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "stud.dat",
+      "url": "https://library.ldraw.org/library/official/p/stud.dat",
+      "sha256": "67c0b504502e97e2f61879ca0f740d101264474b4b95702176ee4685dd1a592a",
+      "bytes": 678,
+      "authors": [
+        "Author: James Jessiman"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "stud2.dat",
+      "url": "https://library.ldraw.org/library/official/p/stud2.dat",
+      "sha256": "e1362f01b81ca9e2526383bee12942ce54cc09a6889e7966f9c846984759b824",
+      "bytes": 904,
+      "authors": [
+        "Author: James Jessiman"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "stud3a.dat",
+      "url": "https://library.ldraw.org/library/official/p/stud3a.dat",
+      "sha256": "405baec668e2fc9bf14890b9c8021a0e1e090b7ca6c939c8b07e0545cc54d42a",
+      "bytes": 584,
+      "authors": [
+        "Author: James Jessiman"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "stud4.dat",
+      "url": "https://library.ldraw.org/library/official/p/stud4.dat",
+      "sha256": "4a2e3bbd0da208cbd15f5af14e2ddd28be4ac006657141b7be305a74e6dfc076",
+      "bytes": 909,
+      "authors": [
+        "Author: James Jessiman"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "stud4a.dat",
+      "url": "https://library.ldraw.org/library/official/p/stud4a.dat",
+      "sha256": "29e414ab757f2a79073aa0d5d10c4c925da1fc239d20019d7615c06db612e2f6",
+      "bytes": 871,
+      "authors": [
+        "Author: James Jessiman"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "stug-1x2.dat",
+      "url": "https://library.ldraw.org/library/official/p/stug-1x2.dat",
+      "sha256": "5842fa1baf6ea7f18fe4e355238cd733ff9bdbdc3d722be5cf8988f1c5fce414",
+      "bytes": 333,
+      "authors": [
+        "Author: Steffen [Steffen]"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    },
+    {
+      "name": "stug-2x2.dat",
+      "url": "https://library.ldraw.org/library/official/p/stug-2x2.dat",
+      "sha256": "16114159ea25719341a852d5403dc9982a6211f2fcb23f5c4c3eac05a2ad43f7",
+      "bytes": 765,
+      "authors": [
+        "Author: Steffen [Steffen]"
+      ],
+      "license": [
+        "Licensed under CC BY 4.0 : see CAreadme.txt"
+      ]
+    }
+  ],
+  "materials": {
+    "url": "https://library.ldraw.org/library/official/LDConfig.ldr",
+    "sha256": "fb7c02d8f4fbb49ff6f4f5c85c70ca60b945e80365ca8bd12bea6b70d6d2f96b"
+  }
+}
