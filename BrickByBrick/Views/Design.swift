@@ -163,6 +163,8 @@ struct CatalogImage: View {
 struct SetRow: View {
     let set: LEGOSet
     var saved = false
+    /// Off where the row isn't a navigation link.
+    var showsChevron = true
     var body: some View {
         HStack(spacing: 15) {
             CatalogImage(url: set.setImgUrl).frame(width: 84, height: 80)
@@ -174,8 +176,10 @@ struct SetRow: View {
                 Text("\(set.numParts) pieces · \(String(set.year))").font(.caption).foregroundStyle(Palette.muted)
             }
             Spacer(minLength: 0)
-            Image(systemName: saved ? "checkmark.circle.fill" : "chevron.right")
-                .foregroundStyle(saved ? Palette.green : Palette.muted).font(.subheadline)
+            if saved || showsChevron {
+                Image(systemName: saved ? "checkmark.circle.fill" : "chevron.right")
+                    .foregroundStyle(saved ? Palette.green : Palette.muted).font(.subheadline)
+            }
         }.padding(14).background(Palette.surface, in: RoundedRectangle(cornerRadius: 20))
     }
 }

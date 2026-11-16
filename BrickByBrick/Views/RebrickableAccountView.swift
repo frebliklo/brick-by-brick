@@ -114,7 +114,7 @@ struct RebrickableImportView: View {
         let saved = store.build(entry.id) != nil
         return VStack(alignment: .leading, spacing: 6) {
             HStack(alignment: .center) {
-                SetRow(set: entry.set, saved: saved)
+                SetRow(set: entry.set, saved: saved, showsChevron: false)
                 if !saved {
                     Button { startImport([entry.set]) } label: {
                         if current?.id == entry.id { ProgressView() } else { Image(systemName: "plus.circle.fill").font(.title2) }
